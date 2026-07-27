@@ -4,8 +4,8 @@ from matplotlib.ticker import PercentFormatter, MultipleLocator
 
 from simluate_gen import draw_multi_pickup
 
-UP_COUNT = 2 # 抽取角色数量
-RUN_TIMES = 10000 # 模拟次数
+UP_COUNT = 10  # 抽取角色数量
+RUN_TIMES = 5000  # 模拟次数
 
 
 result_old = []
@@ -29,7 +29,7 @@ plt.rcParams["font.family"] = "SimHei"
 
 
 def plot_cumulative_prob(data1, data2, max_pulls):
-    pulls = np.arange(0, max_pulls + 1)
+    pulls = np.arange(0, UP_COUNT * 200 + 1)
 
     prob1 = [np.mean(data1 <= p) for p in pulls]
     prob2 = [np.mean(data2 <= p) for p in pulls]
