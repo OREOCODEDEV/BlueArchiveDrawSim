@@ -4,7 +4,7 @@ from matplotlib.ticker import PercentFormatter, MultipleLocator
 
 from simluate_gen import draw_multi_pickup
 
-UP_COUNT = 10  # 抽取角色数量
+UP_COUNT = 2  # 抽取角色数量
 RUN_TIMES = 5000  # 模拟次数
 
 
