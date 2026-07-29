@@ -37,8 +37,8 @@ def draw_multi_pickup(character_count: int, newmode: bool) -> int:
         # 假设旧机制每隔1个池重置点数
         # 重要！视情况注释此段
         # if not newmode:
-        #     if collected_character_count % 2 == 0:
-        #         point_count = 0
+        #    if collected_character_count in [3, 5, 7, 9]:
+        #        point_count = 0
 
         if collected_character_count >= character_count:
             break
